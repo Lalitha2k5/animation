@@ -1,0 +1,47 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    background-color: #fff;
+    animation: b 10s  ;
+}
+@keyframes b{
+    
+}
+svg path:nth-child(1){
+    stroke-dasharray: 1120px;
+    stroke-dashoffset: 1120px;
+    animation: a 5s linear forwards;
+}
+svg path:nth-child(2){
+    stroke-dasharray: 1273px;
+    stroke-dashoffset: 1273px;
+    animation: a 5s linear forwards;
+}
+svg path:nth-child(3){
+    stroke-dasharray: 600px;
+    stroke-dashoffset: 600px;
+    animation: a 5s linear forwards;
+}
+svg path:nth-child(4){
+    stroke-dasharray: 800px;
+    stroke-dashoffset: 800px;
+    animation: a 5s linear forwards;
+}
+svg path:nth-child(5){
+    stroke-dasharray: 550px;
+    stroke-dashoffset: 550px;
+    animation: a 5s linear  reverse;
+}
+
+@keyframes a{
+    0%{
+        stroke-dashoffset:0;
+    }
+    100%{
+        stroke-dashoffset:100%;
+        stroke-dasharray: 0;
+    }
+}

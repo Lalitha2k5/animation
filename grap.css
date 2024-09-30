@@ -1,0 +1,45 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    background-color: #111;
+
+}
+ .a{ 
+    background-color: red;
+    height: 100px;
+    width: 100px;
+    border-radius: 50%;
+    animation: hello 5s infinite ;
+    position: relative;
+}
+@keyframes hello{
+    0%{
+        top: 0px;
+        left:0px;
+        background-color: red;
+    }
+    25%{
+        top: 0px;
+        left: 1170px;
+        background-color: pink;
+    }
+    50%{
+        top: 450px;
+        left: 1170px;
+        background-color: blanchedalmond;
+    }
+    75%{
+        top: 450px;
+        left: 0px;
+        background-color:silver;
+    }
+    100%{
+        top: 0px;
+        left: 0px;
+        background-color:white;
+    }
+}
+
