@@ -104,7 +104,7 @@ body{
     }
     to{
         transform: rotate(360);
-        background-color: pink;
+        background-color: yellow;
         transition: 3s;
         border: yellow;
     }
