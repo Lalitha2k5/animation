@@ -15,13 +15,13 @@ body{
     height: 70px;
     width: 70px;
     background-color: #111;
-    position:relative;
+    position:absolute;
     transform: rotate(-45deg);
     box-shadow: 20px 30px 100px red;
     animation: heart 5s linear infinite;
-    left: 18%;
-    top: 20%;
-    z-index: 9;
+    left: 45%;
+    top: 46%;
+    z-index: 12;
     
 }
 
@@ -61,13 +61,14 @@ body{
     }
 }
 .circle{
-    height: 400px;
-    width: 400px;
-    position: relative;
+    height: 300px;
+    width: 300px;
+    position: absolute;
     background-color: transparent;
     border-radius: 50%;
-    border: 2px skyblue solid;
-    animation: circle 2s linear infinite;
+    border: 3px skyblue solid;
+    animation: circle 5s linear infinite;
+    z-index: 9;
 }
 @keyframes circle{
     from{
@@ -80,11 +81,31 @@ body{
         border: red;
     }
 }
-@media (max-width:768px){
+/* @media (max-width:768px){ 
     .circle {
         height: 300px;
         width: 300px;
         
     }
     
+}*/
+.square{
+    height: 400px;
+    width: 400px;
+    border-radius: 10%;
+    border: #fff solid 2px;
+    position: absolute;
+    background-color: transparent;
+    animation: square 5s linear infinite;
+}
+@keyframes square{
+    from{
+        transform: rotate(0);
+    }
+    to{
+        transform: rotate(360);
+        background-color: pink;
+        transition: 3s;
+        border: yellow;
+    }
 }
